@@ -12,7 +12,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Chips"
               name="sides"
-              checked={ props.sides.includes('Chips') }
+              defaultChecked={ props.sides.includes('Chips') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/chips.png') } height="100px" width="100px" alt="chips" />
@@ -27,7 +27,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Chips & Salsa"
               name="sides"
-              checked={ props.sides.includes('Chips & Salsa') }
+              defaultChecked={ props.sides.includes('Chips & Salsa') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/chips-salsa.png') } height="100px" width="100px" alt="chips and salsa" />
@@ -42,7 +42,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Chips & Guac"
               name="sides"
-              checked={ props.sides.includes('Chips & Guac') }
+              defaultChecked={ props.sides.includes('Chips & Guac') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/chips-guac.png') } height="100px" width="100px" alt="chips and guac" />
@@ -57,7 +57,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Chips & Queso"
               name="sides"
-              checked={ props.sides.includes('Chips & Queso') }
+              defaultChecked={ props.sides.includes('Chips & Queso') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/chips-queso.png') } height="100px" width="100px" alt="chips and queso" />
@@ -72,7 +72,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Tortilla"
               name="sides"
-              checked={ props.sides.includes('Tortilla') }
+              defaultChecked={ props.sides.includes('Tortilla') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/tortilla.png') } height="100px" width="100px" alt="tortilla" />
@@ -87,7 +87,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Taco"
               name="sides"
-              checked={ props.sides.includes('Taco') }
+              defaultChecked={ props.sides.includes('Taco') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/taco.png') } height="100px" width="100px" alt="taco" />
@@ -102,7 +102,7 @@ const SideForm = (props) => {
               type="checkbox"
               value="Fountain Drink"
               name="sides"
-              checked={ props.sides.includes('Fountain Drink') }
+              defaultChecked={ props.sides.includes('Fountain Drink') }
               onChange={ props.handleChange }
             />
             <img src={ require('../images/sides/drink.png') } height="100px" width="100px" alt="fountain drink" />
@@ -113,3 +113,5 @@ const SideForm = (props) => {
     </Fragment>
   )
 }
+
+export default SideForm
