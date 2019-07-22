@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+// import ProteinForm from './ProteinForm'
+import Side from './Side'
+
 
 class Order extends Component {
   state = {
@@ -6,8 +9,7 @@ class Order extends Component {
   }
 
   handleClick = () => {
-    this.state.isClicked = !this.state.isClicked
-  }
+    this.setState({isClicked : !this.state.isClicked})}
 
   render() {
     return (
@@ -31,7 +33,7 @@ class Order extends Component {
               <button className="ui button small" onClick={ this.handleClick }>
                 View Sides
               </button>
-            :
+              :
               <p>No sides</p>
           }
 
